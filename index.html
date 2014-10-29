@@ -31,8 +31,15 @@
 </head>
 
 <body data-spy="scroll" data-target="#mynav">
-    <!--<div id="preloader">-->
-    <!--</div>-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
 
     <nav id="mynav" class="navbar navbar-fixed-top navbar-my navbar-at-top" role="navigation">
         <div class="container">
@@ -41,9 +48,14 @@
                     <span class="sr-only">Toggle navigation</span>
                     <i class="fa fa-bars icon-bar"></i>
                 </button>
-                <a class="navbar-brand" href="#">
-                    <span class="g0v">G0V@US</span>
-                </a>
+                <div class="navbar-brand">
+                    <a href="#">
+                        <span class="g0v">G0V@US</span>
+                    </a>
+                    <!--<div class="fb-share-button" data-href="https://g0v.us" data-width="100"></div>-->
+                    <div class="fb-like" data-href="https://g0v.us" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+                    <div class="fb-follow" data-href="https://www.facebook.com/g0vus" data-layout="button_count" data-colorscheme="dark" data-show-faces="true"></div>
+                </div>
             </div>
             <div id="navcollapse" class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
@@ -73,6 +85,11 @@
     <section id="about" class="section text-center">
         <div class="container">
             <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <a href="https://www.facebook.com/g0vus"><div class="banner"></div></a>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-sm-4 col-sm-offset-4">
                     <h1>簡介</h1>
                 </div>
@@ -82,12 +99,13 @@
                     <div class="wow bounceInUp" data-wow-delay="0.2s">
                         <div class="box">
                             <h2>認識「<span class="g0v">G0V</span>」</h2>
-                            <p><span class="g0v">g0v</span>零時政府是一個推動資訊透明化的社群，致力於開發公民參與社會的資訊平台與工具。
-                            這個名稱源於以代表資訊的「零」，置入代表政府的gov，目標是讓原本零散的公民能夠以開放資料及開源協作來產生監督政府的力量。
-                            <span class="g0v">g0v</span>社群歡迎每一個領域的人才前來提案、以及修改別人正在做或已經有成品的專案，
+                            <p><span class="g0v">g0v</span> 零時政府是一個推動資訊透明化的社群，致力於開發公民參與社會的資訊平台與工具。
+                            這個名稱源於以代表資訊的「零」，置入代表政府的 <span class="g0v">gov</span>，
+                            目標是讓原本零散的公民能夠以開放資料及開源協作來產生監督政府的力量。
+                            <span class="g0v">g0v</span> 社群歡迎每一個領域的人才前來提案、以及修改別人正在做或已經有成品的專案，
                             或是去分析、解讀這些開放的資料。
-                            <span class="g0v">g0v</span>社群的座右銘是：「不要問為什麼『沒有人』做這個，先承認你就是那個『沒有人』!」
-                            所以，當你對台灣公共議題有不滿、覺得要有些改變時，就是加入<span class="g0v">g0v</span>的最佳時機！
+                            <span class="g0v">g0v</span> 社群的座右銘是：「不要問為什麼『沒有人』做這個，先承認你就是那個『沒有人』!」
+                            所以，當你對台灣公共議題有不滿、覺得要有些改變時，就是加入 <span class="g0v">g0v</span> 的最佳時機！
                             快來看看大家都<a href="http://g0v.tw/en-US/projects.html" target="_blank">做了什麼</a>。</p>
                         </div>
                     </div>
@@ -183,8 +201,8 @@
                         <div class="box">
                             <div class="img"><img src="img/talk1.png" alt="" class="img-responsive img-circle"/></div>
                             <h2>柳林瑋</h2>
-                            <p>公民1985共同發起人<br/>
-                            沃草(Watchout)創辦人</p>
+                            <h4>公民1985共同發起人<br/>
+                            沃草(Watchout)創辦人</h4>
                             <h3>網路如何降低民主的門檻</h3>
                         </div>
                     </div>
@@ -194,7 +212,7 @@
                         <div class="box">
                             <div class="img"><img src="img/talk2.png" alt="" class="img-responsive img-circle"/></div>
                             <h2>高嘉良</h2>
-                            <p><span class="g0v">g0v</span>共同創辦人</p>
+                            <h4><span class="g0v">g0v</span>共同創辦人</h4>
                             <h3>國際開放政府與開放資料運動</h3>
                         </div>
                     </div>
@@ -205,7 +223,7 @@
                         <div class="box">
                             <div class="img"><img src="img/talk3.png" alt="" class="img-responsive img-circle"/></div>
                             <h2>瞿筱葳</h2>
-                            <p><span class="g0v">g0v</span>共同創辦人</p>
+                            <h4><span class="g0v">g0v</span>共同創辦人</h4>
                             <h3>如何從沒有人到超多人─台灣<span class="g0v">g0v</span>社群文化演進歷程</h3>
                         </div>
                     </div>
@@ -232,7 +250,7 @@
             <div class="row">
                 <div class="col-xs-12">
                     <h2><a href="http://www.affinitylab.com/"> Affinity Lab</a></h2>
-                    <h3>918-922 U St NW, Washington, DC 20001</h3>
+                    <h2>918-922 U St NW, Washington, DC 20001</h2>
                 </div>
             </div>
         </div>
@@ -252,8 +270,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
             <div class="row">
                 <div class="col-xs-6 col-xs-offset-3">
                     <div class="box">
@@ -261,6 +277,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="container signup-form">
+            <iframe width="100%" height="100%" frameborder="0" src="https://docs.google.com/forms/d/16FPfdI0J6_x11APlv0JBpP3kEnf3SB36-YfQyYXHtLU/viewform"></iframe>
         </div>
     </section>
 
@@ -315,6 +334,7 @@
             $(".round-btn > a").click(scrollAnimationFunc);
         });
     </script>
+
 </body>
 </html>
 
