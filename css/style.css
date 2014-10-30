@@ -120,6 +120,13 @@ body {
     text-shadow: -1px 0 1px black, 0 0 15px black;
 }
 
+/*.navbar-brand {*/
+/*    max-width: 500px;*/
+/*}*/
+/*.social-btn {*/
+/*    overflow: visible;*/
+/*}*/
+
 /*==================================================*/
 /* sections */
 /*==================================================*/
@@ -195,6 +202,10 @@ body {
     height: 500px; 
 }
 
+.video {
+    overflow: hidden;
+}
+
 /* to prevent map zooming on mouse scroll */
 .mapoverlay {
     background: rgba(0, 0, 0, 0);
@@ -207,6 +218,7 @@ body {
 
 .signup-form {
     height: 2000px;
+    overflow: scroll;
 }
 
 
@@ -232,8 +244,29 @@ body {
     .navbar-at-top ul.nav li.active {
         background-color: #fff
     }
+
+    #top #title {
+        font-size: 40px;
+    }
 }
 
 @media (max-width:480px) {
+    .banner {
+        height: 100px;
+    }
+
+    .section .box {
+        margin: 10px;
+    }
+
+    .fb-btn {
+        height: 30px;
+        margin-bottom: 20px;
+    }
+
+    .signup-form {
+        height: 3000px;
+        overflow: scroll;
+    }
 }
 
