@@ -91,19 +91,19 @@ body {
 #top #title {
     padding: 20% 0 0 0;
 
-    color: white;
+    color: #222;
     font-size: 60px;
     font-family: sans-serif;
     font-weight: 900;
-    text-shadow: -1px 0 1px black, 0 0 15px black;
+    text-shadow: -1px 0 1px white, 0 0 15px white;
 }
 
 #top #subtitle {
-    color: white;
+    color: #222;
     font-size: 20px;
     font-family: sans-serif;
     font-weight: 500;
-    text-shadow: -1px 0 1px black, 0 0 15px black;
+    text-shadow: -1px 0 1px white, 0 0 15px white;
 }
 
 /*==================================================*/
@@ -191,6 +191,10 @@ body {
     text-align: left;
 }
 
+.box.program .hanging-indent {
+    text-indent: -40px;
+    padding-left: 40px;
+}
 
 /*==================================================*/
 /* embeddings */
