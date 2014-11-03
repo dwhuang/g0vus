@@ -200,11 +200,6 @@ body {
 /* embeddings */
 /*==================================================*/
 
-.banner {
-    background: url('../img/FBCover10 g0vus.png') no-repeat top center / contain;
-    height: 200px;
-}
-
 .map {
     height: 500px; 
 }
@@ -232,14 +227,14 @@ body {
 /* Media queries */
 /*==================================================*/
 
-@media(min-width:767px) {
+@media(min-width:992px) {
     #top {
         height: 100%;
         padding: 0;
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:767px) {
     .navbar-at-top ul.nav li a {
         color: #222;
         background-color: #ddd
@@ -254,25 +249,13 @@ body {
     #top #title {
         font-size: 40px;
     }
-}
-
-@media (max-width:480px) {
-    .banner {
-        height: 100px;
-    }
 
     .section .box {
         margin: 10px;
     }
 
     .fb-btn {
-        height: 30px;
         margin-bottom: 20px;
-    }
-
-    .signup-form {
-        height: 3000px;
-        overflow: scroll;
     }
 }
 
