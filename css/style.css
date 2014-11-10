@@ -220,6 +220,9 @@ body {
 
 .signup-form {
     height: 2000px;
+    width: 10px;
+    min-width: 100%;
+    *width: 100%;
 }
 
 
