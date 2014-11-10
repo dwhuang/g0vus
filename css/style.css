@@ -220,6 +220,9 @@ body {
 
 .signup-form {
     height: 2000px;
+
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
 }
 
 
