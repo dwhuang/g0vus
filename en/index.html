@@ -492,9 +492,13 @@ We invite experts from every field to unite and contribute!</div>
             // scrolling animation
             function scrollAnimationFunc(e) {
                 event.preventDefault();
-                $(document.body).animate(
-                    {scrollTop: $($(this).attr("href")).offset().top},
-                    1500, "easeInOutQuint");
+                if(e.target.href.match('#')) {
+                    $(document.body).animate(
+                        {scrollTop: $($(this).attr("href")).offset().top},
+                        1500, "easeInOutQuint");
+                } else {
+                    location.herf = e.target.href;
+                }
             }
             $(".navbar ul.nav li a").click(scrollAnimationFunc);
             $(".round-btn > a").click(scrollAnimationFunc);
