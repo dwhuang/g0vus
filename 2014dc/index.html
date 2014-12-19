@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>G0V@US</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+    <!-- wow animation -->
+    <link href="../css/animate.css" rel="stylesheet">
+    <!-- font awesome -->
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- lightbox -->
+    <link href="lightbox/css/lightbox.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--<script src="js/ie-emulation-modes-warning.js"></script>-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- google analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-56254427-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body data-spy="scroll" data-target="#mynav">
+    <!--[> facebook button requirement <]-->
+    <!--<div id="fb-root"></div>-->
+    <!--<script>(function(d, s, id) {-->
+    <!--    var js, fjs = d.getElementsByTagName(s)[0];-->
+    <!--    if (d.getElementById(id)) return;-->
+    <!--    js = d.createElement(s); js.id = id;-->
+    <!--    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";-->
+    <!--    fjs.parentNode.insertBefore(js, fjs);-->
+    <!--}(document, 'script', 'facebook-jssdk'));-->
+    <!--</script>-->
+
+    <nav id="mynav" class="navbar navbar-fixed-top navbar-my" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcollapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars icon-bar"></i>
+                </button>
+                <div class="navbar-brand">
+                    <a href="#">
+                        <span class="g0v">G0V@US</span> 2014 華府黑客松活動紀錄
+                    </a>
+                </div>
+                <!--[> facebook like, share buttons <]-->
+                <!--<div class="navbar-brand">-->
+                <!--    <div class="visible-lg-inline">-->
+                <!--        <div class="fb-like" data-href="index.html" data-layout="button_count" data-action="like"-->
+                <!--            data-show-faces="true" data-share="true" data-width="50"></div>-->
+                <!--    </div>-->
+                <!--    <div class="visible-md-inline">-->
+                <!--        <div class="fb-like" data-href="index.html" data-layout="button" data-action="like"-->
+                <!--            data-show-faces="true" data-share="true" data-width="50"></div>-->
+                <!--    </div>-->
+                <!--    <div class="visible-sm-inline">-->
+                <!--        <div class="fb-like" data-href="index.html" data-layout="button" data-action="like"-->
+                <!--            data-show-faces="true" data-share="false" data-width="50"></div>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <!-- facebook follow button -->
+                <div class="navbar-brand">
+                    <div class="visible-lg-inline">
+                        <div class="fb-follow" data-href="https://www.facebook.com/g0vus" data-layout="button_count"
+                            data-colorscheme="dark" data-show-faces="true" data-width="50"></div>
+                    </div>
+                    <div class="visible-md-inline visible-sm-inline">
+                        <div class="fb-follow" data-href="https://www.facebook.com/g0vus" data-layout="button"
+                           data-show-faces="true" data-width="50"></div>
+                    </div>
+                    <!-- no "follow" button on xs screen -->
+                </div>
+            </div>
+            <div id="navcollapse" class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#top">頁首</a></li>
+                    <li><a href="#summary">回顧</a></li>
+                    <li><a href="#talk">講座</a></li>
+                    <li><a href="#project">專案</a></li>
+                    <li><a href="#finance">財務</a></li>
+                    <li><a href="#thank">感謝</a></li>
+                    <li><a href="photo/">照片</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="top">
+        <img src="../img/FBCover10 g0vus.png" class="img-responsive" style="margin:auto"/>
+        <div id="title">2014 <span class="g0v">g0v</span>華府零時起義黑客松<br/>活動紀錄</div>
+    </section>
+
+    <section class="section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-4">
+                        <div class="section-heading">
+                            <h3><a href="photo/" target="_blank">完整活動照片 (新視窗)</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="summary" class="section dark text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-4">
+                    <div class="section-heading">
+                        <h1>精彩活動回顧</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-9 tight">
+                    <div class="box">
+                        <p>「華府零時起義黑客松」於 11/22~23 在 Washington DC 圓滿落幕，超過五十名台灣留學生與台僑從美東各地前來共襄盛舉，
+                        與台灣來的三位講者相互交流、討論如何利用網路促進公民參與。緊接在演講後，大家在二十四小時的黑客松（hackathon）
+                        實際動手開發專案，最後向大家報告成果進度。</p>
+
+                        <p>此次活動很榮幸邀請到「<span class="g0v">g0v.tw</span> 零時政府」社群發起人高嘉良與瞿筱葳，向大家介紹開源
+                        （open source）模式和開放政府的概念。高嘉良說，<span class="g0v">g0v</span> 
+                        的意思是「從零思考政府」， 他希望這個社群能打破對政府的既定印象，從零開始擘畫你理想的政府，重新思考你與政府的關係。
+                        <span class="g0v">g0v</span> 結合開源模式、公民精神與行動主義（activism），透過開放源碼的協作模式促進資訊的公開透明化。
+                        <span class="g0v">g0v</span> 成立兩年多來已完成許多精采的專案，包括中央政府總預算的視覺化、開放政治獻金、立委投票指南等。
+
+                        <p> 瞿筱葳舉「開放政治獻金」為例說明 <span class="g0v">g0v</span> 的協作模式：
+                        這個專案源自於有位網友在 <span class="g0v">g0v</span> 的平台上說，他想知道幾位主要政治人物的政治獻金來源。
+                        瞿筱葳因此與一個公民團體合作，去監察院將政治獻金的帳目大量影印下來，由工程師掃描成圖檔、設計程式讓網友協作處理。
+                        2,637 份文件，約三十萬格資料，近一萬名網友在 24 小時內齊心協力完成文字辨識。
+                        這種草根的、開源的大規模動員不僅展現了台灣青年積極參與社會的熱情與創意，也讓世界看見我們實踐民主價值的能量與行動力。</p>
+
+                        <p>沃草（Watchout）的創辦人柳林瑋醫師也和我們分享他參與公民運動的歷程，以及沃草「趣」政治化的目標。
+                        柳林醫師的社運啟蒙來自去年的洪仲丘事件，他在網路上召集網友到國防部抗議，沒想到因此促成「公民1985行動聯盟」，
+                        後來甚至創下二十五萬人上凱道的紀錄。這些經驗讓他體認到「生活即政治」的道理，然而許多人可能覺得政治枯燥乏味或骯髒不堪，
+                        而不願或不想參與政治。他創辦「沃草」網站就是為了「趣」政治化，讓政治變得好玩有趣，
+                        進一步培養人們時常關心、監督政府。沃草的首個產品「國會無雙」，用播報球賽的方式來看立法院的議事直播，
+                        並公布每日立法院開議質詢的好球與烏龍球，讓大家評價立法委員的表現。此次縣市長選舉，沃草也規劃了「市長給問嗎」，
+                        徵求網友想問候選人的問題，連署達一定數量後邀請縣市長候選人回答，
+                        這樣「動態民主」的互動方式讓候選人能更直接面對民意的挑戰。</p>
+
+                        <p>演講後便進入活動的主軸─二十四小時的黑客松，參與者要在不到一天的時間內，提案、分組、協作、報告成果。
+                        參與者紛紛發揮創意與各自的專長，提出許多令人耳目一新的專案計畫，包括：
+                        降低瀏覽門檻與提昇新聞正確性的「打臉高手」、提供歷史事件對照的「比歷尺」、公布企業獲得多少租稅補貼的「肥貓專案」、
+                        讓連署變得更容易的「公民連署平台」、將台灣資訊翻譯成外國語言的「翻吧，台灣！」
+                        這些專案內容凸顯台灣青年關心社會議題的深度與廣度，不僅著眼於當下，也兼顧歷史的縱深；不僅關心島內發展，也讓世界認識台灣。
+                        除了開發新專案，有些小組也致力於改進過往的專案，例如議員投票指南升級版、政治獻金視覺化2.0。
+                        經過一次次的協作改良，這些專案所開發的資訊平台已更方便好用，不僅有助於資訊的公開化、透明化，
+                        也讓人民能更了解與監督民主制度的運作。</p>
+
+                        <p>首場「<span class="g0v">g0v@US</span>黑客松」就在大家精采的成果報告中告一段落，
+                        然而這並非結束，而是培力<span class="g0v">g0v</span>美東社群的嶄新開始。
+                        我們希望美東地區的留學生與台僑能藉由這次活動相互交流、分工合作，
+                        回到所在地後繼續完成專案，甚至接力舉辦小型的黑客松，讓彼此激盪出更多火花，手腦並行、鍵盤救國。</p>
+
+                        <p>此次活動非常感謝台灣人公共事務協會（Formosan Association of Public Affairs）、陳文成基金會、華府科技協會、
+                        北美洲台灣人教授協會、以及美麗島前進的大力支持，沒有他們的贊助與奧援，我們的活動無法成行。
+                        同時，感謝華府台灣同鄉會的媽媽們，她們提供的魯肉飯、碗粿、蘿蔔排骨湯等美味的家常料理溫暖了台灣遊子的心。
+                        此外，本次活動經費有超過三分之一來自小額捐款，我們要特別感謝眾多支持我們理念與行動的人，他們可能不克前來參加，
+                        但這樣草根的群眾募資也同樣呼應了我們對公民社會的想像：透過公共參與、思考辯論與團結互助，
+                        我們的社會將更開放與包容、更富活力與創新。
+                        「華府零時起義黑客松」只是個開始，目標是讓我們的福爾摩沙成為更公平正義的美麗島。</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 tight">
+                    <a href="photo/p03.jpg" data-lightbox="p03">
+                        <img src="photo/p03.jpg" class="img-responsive"/>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3 tight">
+                    <a href="photo/p07.jpg" data-lightbox="p07">
+                        <img src="photo/p07.jpg" class="img-responsive"/>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3 tight">
+                    <a href="photo/p16.jpg" data-lightbox="p16">
+                        <img src="photo/p16.jpg" class="img-responsive"/>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3 tight">
+                    <a href="photo/p12.jpg" data-lightbox="p12">
+                        <img src="photo/p12.jpg" class="img-responsive"/>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3 tight">
+                    <a href="photo/p08.jpg" data-lightbox="p08">
+                        <img src="photo/p08.jpg" class="img-responsive"/>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3 tight">
+                    <a href="photo/p34.jpg" data-lightbox="p34">
+                        <img src="photo/p34.jpg" class="img-responsive"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="talk" class="section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-4">
+                    <h1>講座紀錄</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-9 tight">
+                    <div class="box">
+                        <h3>不只寫程式改造社會─ <span class="g0v">g0v</span>的故事</h3>
+                        <h4>高嘉良 <span class="g0v">g0v.tw</span> 台灣零時政府社群共同發起人</h4>
+                        <hr/>
+                        <p>一切都從「<a href="https://www.youtube.com/watch?v=2EuUI01uxVU&feature=youtu.be" target="_blank">經濟動能推升方案</a>」
+                        這個爛廣告開始，當這支廣告出來的時候，高嘉良正好因為高空跳傘出意外而躺在醫院，所以整天看到政府令人生氣的作為，
+                        決定挺身而出做些什麼。由於這支 30 秒不知所云的廣告就花了納稅人近百萬台幣，
+                        因此嘉良和一群夥伴就希望能夠讓民眾更能夠清楚地了解政府運用稅金的情況。
+                        他們利用兩個月的時間把政府預算視覺化，用更貼近生活的方式呈現出來，這也是 <span class="g0v">g0v</span> 的第一個的專案。</p>
+                        
+                        <p><span class="g0v">g0v.tw</span> 希望能夠「從零去思考政府」，結合開源模式、公民精神、以及行動主義來改變社會。
+                        所謂的開源模式 (Open Source) 的概念就是將程式與資訊分享給所有人，
+                        讓任何人都有機會修改、貢獻、再創造。可以想像成是一個很複雜的 Google Docs 或是 Wikipedia，
+                        運用群眾協作的模式來打造出各種厲害的專案，例如 
+                        <a href="https://openstreetmap.org/">OpenStreetMap</a> 和 
+                        <a href="https://wheelmap.org/">wheelmap.org</a>。
+                        開源的重要三大元素就是 Open License, Open Format, and Open Community，
+                        開放授權讓任何人都可以再利用，開放格式讓程式可以在各種平台上運作，最後達到開放社群，所有人都能夠貢獻他的專長。</p>
+
+                        <p><span class="g0v">g0v.tw</span> 希望讓 social media 更進一步達到 social product，
+                        不只是分享、討論，而是能夠共同產出些什麼有用的專案，是一個從 Data → Community → Collaboration 的概念，
+                        用由下而上去推動開放政府，不但讓政府的資訊更透明，也能夠公民更直接地參與社會行動。</p>
+                        
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 tight">
+                    <a href="photo/p06.jpg" data-lightbox="p06">
+                        <img src="photo/p06.jpg" class="img-responsive"/>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3 tight">
+                    <a href="photo/p05.jpg" data-lightbox="p05">
+                        <img src="photo/p05.jpg" class="img-responsive"/>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3 tight">
+                    <a href="photo/p07.jpg" data-lightbox="p07">
+                        <img src="photo/p07.jpg" class="img-responsive"/>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-9 tight">
+                    <div class="box">
+                        <h3>怎麼從沒有人變成超多人？<span class="g0v">g0v</span> 社群文化的演進</h3>
+                        <h4>瞿筱葳 <span class="g0v">g0v.tw</span> 台灣零時政府社群共同發起人</h4>
+                        <hr/>
+                        <p><span class="g0v">g0v.tw</span> 的社群文化就是從開源 → 開幹 → 開花，透過分享、協作和行動的方式，
+                        讓一群很生氣的人開始站出來為這個社會貢獻些什麼。<span class="g0v">g0v</span> 
+                        不是一個組織，它比較像是鬆散的社群，
+                        之所以可以持續兩年多到現在有幾個很重要的關鍵：善用協助工作、崇尚行動主義、以及建立基礎建設。</p>
+
+                        <p>除了開放授權碼能夠吸引更多人加入外，<span class="g0v">g0v</span> 也善用
+                        <a href="http://hack.g0v.tw/irc">網路聊天室(IRC)</a>，
+                        紀錄每個人的發言，讓沒有到場的人也能夠清楚大家在討論什麼
+                        ；<a href="http://hackfoldr.org/g0vus/">共同筆記 (hackfoldr)</a>，統整大家各種的想法與計畫
+                        ；以及<a href="https://github.com/g0v">程式協作平台 (Github)</a>，讓參與的人能夠同時間修改程式。</p>
+
+                        <p>兩個月一次的黑客松 (Hackthon) 讓原本躲在網路背後的鄉民，能夠有機會面對面聯絡感情， 增加彼此的凝聚力以及行動力。
+                        另外，每當有人只想出一張嘴提出批評或建議時，
+                        筱葳和 <span class="g0v">g0v.tw</span> 的夥伴都會請他們直接到 hackfoldr 寫下自己的想法和點子再分享給大家。
+                        筱葳分享得一段話非常有意思:「不要問為什麼沒有人去做，先承認你就是沒有人。」
+                        口水無法改變社會，唯有行動才有可能，「因為沒有人是萬能的。」</p>
+
+                        <p><span class="g0v">g0v</span> 社群也一直有在建立基礎建設，像是
+                        <span class="g0v">g0v</span> 公報、<span class="g0v">g0v</span> 授權中心、
+                        以及 e04 人力銀行等等。這些基礎建設也是能夠維繫整個群體很重要的關鍵，
+                        他們讓運作更加地迅速，而且每一次都能夠從既有的基礎上開始。</p>
+
+                        <p><span class="g0v">g0v</span> 的角色可以是公民運動團體的後勤軍火研發團隊，
+                        平時做專案提供他們更簡易使用的資訊平台；在運動爆發當下有緊急需要的時候，
+                        <span class="g0v">g0v</span> 的夥伴也能夠挺身協助。
+                        另一方面，<span class="g0v">g0v</span> 社群也很希望能夠建立起政府對(零時)政府的特殊關係，
+                        去影響政府部門更加開放他們的資訊，並且善用開源、協作的模式。</p>
+                        
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 tight">
+                    <a href="photo/p15.jpg" data-lightbox="p15">
+                        <img src="photo/p15.jpg" class="img-responsive"/>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3 tight">
+                    <a href="photo/p17.jpg" data-lightbox="p17">
+                        <img src="photo/p17.jpg" class="img-responsive"/>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3 tight">
+                    <a href="photo/p16.jpg" data-lightbox="p16">
+                        <img src="photo/p16.jpg" class="img-responsive"/>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-9 tight">
+                    <div class="box">
+                        <h3>從公益到公義─動態民主的可能性</h3>
+                        <h4>柳林瑋 沃草創辦人</h4>
+                        <hr/>
+                        <p>柳林瑋從小就立志要當第一名的醫生，上了台大醫學院之後，就不斷地拜訪傑出校友，
+                        希望從他們身上學到真傳。其中有位醫生告訴他，要當一名好的醫生就必須對生理、心理、以及社會有深刻的了解。
+                        為此柳林在讀醫的期間常常到偏鄉義診，做了很多公益的行動，長輩們都認為他是乖小孩。
+                        然而，稍微長大一點之後，柳林發現大家之所以會需要出來做這麼多的公益，其實是社會上有很多不公不義的事情。</p>
+
+                        <p>2012 年洪仲丘的事件爆發，柳林發起「公民1985」的行動，
+                        號召 25 萬位公民身穿白衣到凱道向國防部表達嚴正的抗議。這次的行動也有運用到所謂開放的概念，
+                        像是發行待用貼紙以及開放票選行動的口號，讓有能力、有想法的人可以多多貢獻。
+                        今年三一八太陽花學運，柳林也是核心的成員之一，他甚至號召到兩百多位的醫生到立法院以及周邊會場設立醫護站。
+                        雖然他極力反對精英和威權，不過當有近百位身穿醫師袍、律師袍的人站出來反黑箱服貿的時候，確實也達到很大的效果。</p>
+
+                        <p>柳林希望能夠讓去政治化變成「趣」政治化，降低公民參與政治的門檻，
+                        因此創辦了<a href="https://watchout.tw">沃草公司 (Watchout)</a>，
+                        希望利用網路來施行動態民主。現階段其中一個主要的專案就是<a href="https://musou.tw">國會無雙</a>，
+                        將無聊的立法院議事直播，轉變成像是在播報棒球賽事，不但是賽前預報、主播評論，甚至還有精彩的賽後精華。
+                        這個專案希望能夠用網路的方式來佔領立法院，用幽默的力量來對抗有些荒謬的立法委員。</p>
+
+                        <p>網路之所以能夠成為動態民主的媒介就是因為含有票票等值的概念，並不會因為
+                        一個人的分身地位讓「讚」看起來又金又大。「<a href="https://wethepeople.tw">市長，給問嗎？</a>」
+                        就是嘗試動態民主的可能性，由群眾利用網路發起提問然後連署，連署到一定數量就會要求市長回答。先前
+                        沃草有直播訪問台北市主要三位候選人，訪問的題目也是由民眾決定，而非像傳統電視
+                        節目是套好招。連署人數最多的就第一個提問，就是候選人要操縱網軍也不可能跟幾千
+                        人對抗。11 月 26 號晚間 7 點沃草籌備了
+                        「<a href="https://www.youtube.com/watch?v=Kqq2AsH3ijM">李前市長給問嗎？</a>」，
+                        是一場高齡 92 歲的李登輝對 1992 年次的首投族精彩的對話。</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 tight">
+                    <a href="photo/p08.jpg" data-lightbox="p08">
+                        <img src="photo/p08.jpg" class="img-responsive"/>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3 tight">
+                    <a href="photo/p11.jpg" data-lightbox="p11">
+                        <img src="photo/p11.jpg" class="img-responsive"/>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3 tight">
+                    <a href="photo/p12.jpg" data-lightbox="p12">
+                        <img src="photo/p12.jpg" class="img-responsive"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project" class="section dark text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-4">
+                    <div class="section-heading">
+                        <h1>專案成果報告</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 tight">
+                    <div class="box">
+                        <h3>打臉高手</h3>
+                        <img src="proj_img/p01.png" class="img-responsive"/>
+                        <hr/>
+                        <ul>
+                            <li><a href="https://hackfoldr.org/g0vus/BoKu2ClFSE3">專案共筆</a></li>
+                            <li>動機：希望運用公民的力量來監督公眾人物的言論與相關媒體報導，設計即時的回饋機制，
+                            讓閱聽人可以提供證據來反駁不時的言論和報導，也就是俗稱的「打臉」。</li>
+                            <li>設計概念：
+                            <ul>
+                                <li>提供網友回報可疑文章，累積「欠打指數」，
+                                讓有資源有能力反駁文章的人能夠注意到哪些文章該打，並提佐證資料來反駁。</li>
+                                <li>列舉正反雙方的證據，並提供血條，讓其他人可以一目了然消息的真實性</li>
+                                <li>設計「欠打指數」(被打臉次數/觀看次數)，並於每日公布前十大被打臉文</li>
+                            </ul>
+                            <li>這兩天中催生出了：
+                            <ul>
+                                <li>設計網站雛形、功能與使用流程</li>
+                                <li>建立資料庫格式</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 tight">
+                    <div class="box">
+                        <h3>議員投票指南 升級版</h3>
+                        <img src="proj_img/p02.png" class="img-responsive"/>
+                        <hr/>
+                        <ul>
+                            <li><a href="https://hackfoldr.org/g0vus/2fy2gUyOpvN">專案共筆</a></li>
+                            <li>動機：改善現有的<a href="http://councils.g0v.tw">議員投票指南</a>的操作介面與功能，
+                            讓使用者能夠快速搜尋自己感興趣的議員和議案，並能夠清楚知道目前議案的進度到哪個階段。</li>
+                            <li>設計概念：
+                            <ul>
+                                <li>由議題出發，整理議員們對該議題的態度，以過去的提案、投票記錄驗證，提供選民投票的參考。
+                                比方說：你是台北市民，你覺得遠雄大巨蛋是個很糟糕的決策，我們的議員投票指南可以告訴你過去表決支持大巨蛋的有哪些議員、
+                                投反對票的有哪些、誰曾在議會質詢過相關法案。</li>
+                                <li>希望各地的公民可以踴躍提出當地關心或有爭議的議題，並提供議題(市政)簡介，
+                                爭議點、正反方意見及代表，以及相關法案及投票紀錄。</li>
+                                <li>在網站上顯示出議案目前的進度，讓公民團體或是人民能夠在議案闖關之前來得及表達自己的意見和訴求。</li>
+                            </ul>
+                            <li>這兩天中催生出了：
+                            <ul>
+                                <li>修正資料庫不完整的問題</li>
+                                <li>加入全站搜尋功能、新增法案依類別排序 </li>
+                                <li>重新設計網站外觀</li>
+                                <li>整理出 UI/UX 改善建議，等待工程師接手修正</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix visible-lg-block"></div>
+                <div class="col-lg-6 tight">
+                    <div class="box">
+                        <h3><a href="http://fact.g0v.tw/checkout.html">比歷尺</a></h3>
+                        <img src="proj_img/p03.png" class="img-responsive"/>
+                        <hr/>
+                        <ul>
+                            <li><a href="http://fact.g0v.tw/checkout.html">網站</a></li>
+                            <li><a href="https://hackfoldr.org/g0vus/IfuNPcr8nvZ">專案共筆</a></li>
+                            <li>動機：歷史上有許多看似偶然而無關的事件，淹沒在時間的洪流裡，但當我們串連起蛛絲馬跡，
+                            就能發現隱含在其中的前因後果，帶給我們全新的觀點，而非扁平單一的事件本身。
+                            因此，我們希望藉由這個專案，讓使用者能夠透過這個介面，輸入兩個關鍵字，比較兩個在同一時空中的不同事件。</li>
+                            <li>設計概念：
+                            <ul>
+                                <li>利用現有的<a href="http://fact.g0v.tw">「政誌」網站</a>，增加可以比較兩個人物或者是某人物與某事件的關聯性。</li>
+                                <li>提供時間軸讓歷史事件的時序更清楚明瞭</li>
+                            </ul>
+                            <li>這兩天中催生出了：
+                            <ul>
+                                <li>基本功能已經可以上線測試</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 tight">
+                    <div class="box">
+                        <h3>進擊的專案</h3>
+                        <img src="proj_img/p04.png" class="img-responsive"/>
+                        <hr/>
+                        <ul>
+                            <li><a href="https://hackfoldr.org/g0vus/kiBwRTQKh7T">專案共筆</a></li>
+                            <li>動機：升級現有的 <a href="http://hack.g0v.tw/project">g0v 專案頁面</a>，
+                            讓使用者更清楚目前專案的熱門度、進度、以及需求。</li>
+                            <li>設計概念：
+                            <ul>
+                                <li>計算各個專案的活耀度，並在頁面上按造活耀度排名。</li>
+                                <li>提供搜尋功能，讓使用者更容易找到自己感興趣的專案。</li>
+                                <li>設計積分制，讓使用者可以看到自己或的是別人的貢獻度。</li>
+                                <li>利用標籤功能，讓專案的資源及人才需求一目了然。</li>
+                            </ul>
+                            <li>這兩天中催生出了：
+                            <ul>
+                                <li>擬定網站功能改版計畫</li>
+                                <li>完成網頁外觀設計</li>
+                                <li>後端程式碼撰寫中</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix visible-lg-block"></div>
+                <div class="col-lg-6 tight">
+                    <div class="box">
+                        <h3>企業肥貓稅不飽</h3>
+                        <img src="proj_img/p05.png" class="img-responsive"/>
+                        <hr/>
+                        <ul>
+                            <li><a href="https://hackfoldr.org/g0vus/y4Fhms4cK5Q">專案共筆</a></li>
+                            <li>動機：翻出政府對企業的補貼、減稅規則，並且查出每家企業每年領多少補助，
+                            有多少企業是靠著政府補助或減稅才活下來的？這些企業領政府的錢苟延殘喘，
+                            把資本和人才放在生產力很低的地方，造成產業無法升級。或者是另外有些企業拿了補助卻都在國外投資，
+                            沒有在台灣創造工作機會。</li>
+                            <li>設計概念：
+                            <ul>
+                                <li>由於政府的實質補助分散在各種不同的獎助條例和法案中，難以從帳面上的數字去認定，所以我們初步採用「稅率」
+                                來當作指標性的租稅補貼以及企業是否回饋社會。</li>
+                                <li>所計算出的「稅率」，是由企業財報上的所得稅費用除以稅前淨利，雖然跟實際上的稅率會有些微誤差，但仍然可以作為指標。</li>
+                                <li>以上市企業為第一階段分析的對象，按照產業分類，比較同一產業內各個企業過去十年 (民國93-102年)的平均稅率。</li>
+                                <li>在網站中提供簡單的「營利事業所得稅」小知識，讓一般民眾也夠了解網站上的資訊。</li>
+                            </ul>
+                            <li>這兩天中催生出了：
+                            <ul>
+                                <li>寫出Data Crawler來爬「公開資料觀測站」的企業營運、稅務資料。</li>
+                                <li>發現了同一個產業，不同公司十年的平均稅率可以相差近十倍。</li>
+                                <li>整理企業稅率相關知識與問題，希望有財稅專家接力解釋稅率相差如此之大的原因。</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 tight">
+                    <div class="box">
+                        <h3>公民連署平台</h3>
+                        <img src="proj_img/p06.png" class="img-responsive"/>
+                        <hr/>
+                        <ul>
+                            <li><a href="https://hackfoldr.org/g0vus/s3bij8M6Ypx">專案共筆</a></li>
+                            <li>動機： 讓公民可以更方便的發起和參與連署。</li>
+                            <li>設計概念：
+                            <ul>
+                                <li>公民可以在網站中發起連署，想支持的民眾只要填寫資料後就能自動產生可列印的連署單。</li>
+                                <li>公民也能夠將陳情書放置網站，並設置想陳情的單位。民眾填寫個資後，會自動 Email 給相關單位，
+                                產生可列印的陳情書，並顯示區域立委、議員的聯絡方式和寄件地址。</li>
+                            </ul>
+                            <li>這兩天中催生出了：
+                            <ul>
+                                <li>網站功能設計、外觀設計</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix visible-lg-block"></div>
+                <div class="col-lg-6 tight">
+                    <div class="box">
+                        <h3><a href="http://chihaoyo.net/fanba/">翻吧，台灣！</a></h3>
+                        <img src="proj_img/p07.png" class="img-responsive"/>
+                        <hr/>
+                        <ul>
+                            <li><a href="http://chihaoyo.net/fanba/">網站</a></li>
+                            <li><a href="https://hackfoldr.org/g0vus/M6aHMLt3fn8">專案共筆</a></li>
+                            <li>動機：建立一個簡易的協力翻譯平台，提供需要與國際媒體發聲的社會議題、介紹台灣的中文影片、反映輿論的文章。</li>
+                            <li>設計概念：
+                            <ul>
+                                <li>建立一個介面活潑的多人共同協作的翻譯介面，能夠讓全球有興趣的人24小時無時差的持續工作，
+                                讓重要的資訊在最短的時間內可以轉換成其他語言。</li>
+                                <li>每個人都可以發起翻譯專案，號召網民來幫忙協助翻譯。以一個段落為翻譯單位，但也不一定要一次翻完，
+                                而且任何人都可以校對別人的翻譯。</li>
+                                <li>目前翻譯以中文轉英文和日文為主。</li>
+                            </ul>
+                            <li>這兩天中催生出了：
+                            <ul>
+                                <li>功能設計、外觀設計</li>
+                                <li>可以上線測試的網站</li>
+                                
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 tight">
+                    <div class="box">
+                        <h3><a href="http://chungheng.github.io/g0v/page/index.html">政治獻金視覺化v2.0</a></h3>
+                        <img src="proj_img/p08.png" class="img-responsive"/>
+                        <hr/>
+                        <ul>
+                            <li><a href="http://chungheng.github.io/g0v/page/index.html">網站</a></li>
+                            <li><a href="https://hackfoldr.org/g0vus/hWdh50D7qp9">專案共筆</a></li>
+                            <li>動機：將現有的立委政治獻金資料，從密密麻麻的數字變成詳細圖表與比較表，
+                            讓民眾可以一目了然立委的政治獻金來源和支出明細。</li>
+                            <li>設計概念：
+                            <ul>
+                                <li>將立委的政治獻金來源分類，並將每位捐款人與單位的金額多少用圖表面積的大小表示出來。</li>
+                                <li>將每位立委的收入和花費項目做橫向比較，讓使用者可以清楚比較立委在某項目上花費的多寡。</li>
+                            </ul>
+                            <li>這兩天中催生出了：
+                            <ul>
+                                <li>Beta版網站已經上線公開！</li>
+                                <li>尚未囊括所有委員</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix visible-lg-block"></div>
+                <div class="col-lg-6 tight">
+                    <div class="box">
+                        <h3>Not Province of China</h3>
+                        <img src="proj_img/p09.png" class="img-responsive"/>
+                        <hr/>
+                        <ul>
+                            <li><a href="https://hackfoldr.org/g0vus/RRUz1822aga">專案共筆</a></li>
+                            <li>動機：許多公司甚至政府部門的報名網站等等，會在國籍列表上面把應該要是
+                            Taiwan 的部份打成 Taiwan, Province of China 之類的。這個專案讓我們能更有效率的要求這些單位做出更正。</li>
+                            <li>設計概念：
+                            <ul>
+                                <li>提供網友回報哪些機構、公司把台灣顯示成 Province of China，並製作成公開的清單。</li>
+                                <li>提供現成專業信函，甚至是自動幫網友寄信對該機構施壓。</li>
+                                <li>追蹤該機構或該公司的回應</li>
+                            </ul>
+                            <li>這兩天中催生出了：
+                            <ul>
+                                <li>已經有會動的<a href="https://g0vus.mybalsamiq.com/projects/prc/prototype/home?key=70bd51fb29eff84529e3304b9c0eab6c8c966799">測試版網頁</a></li>
+                                <li>尚需外觀設計</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="finance" class="section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-4">
+                    <div class="section-heading">
+                        <h1>財務報告</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3 tight">
+                    <img src="img/finance.png" class="img-responsive"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 tight">
+                    <img src="img/finance1.png" class="img-responsive"/>
+                </div>
+                <div class="col-lg-6 tight">
+                    <img src="img/finance2.png" class="img-responsive"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="thank" class="section text-center dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-4">
+                    <div class="section-heading">
+                        <h1>特別感謝</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 tight">
+                    <div class="box">
+                        <p>這次活動能夠順利且成功地舉行，要特別感謝所有贊助我們的組職，以及支持我們的長輩與親友。
+                        因為有你們，主辦單位才能夠邀請到三位重量級的講者，並無後顧之
+                        憂地提供舒適的場地以及吃不完的食物，讓所有參加活動的夥伴得以專心開發專案，真的非常感謝。</p>
+
+                        <h3>贊助單位</h3>
+                        <ul>
+                        <li>台灣人公共事務協會 </li>
+                        <li>陳文成博士紀念基金會</li>
+                        <li>華府科技協會</li>
+                        <li>北美洲台灣人教授協會</li>
+                        <li>美麗島前進</li>
+                        <li>LR Technologies</li>
+                        </ul>
+
+                        <h3>個人捐款</h3>
+                        <ul>
+                            <li>Bernie Huang</li>
+                            <li>Bilan & Shaw-Fang Jeng</li>
+                            <li>Chi-Kuang Kuan</li>
+                            <li>David Hsiao</li>
+                            <li>James Chen</li>
+                            <li>Jia-Yeong Ku</li>
+                            <li>Ka-Ti Chang</li>
+                            <li>Li-Ching Chen</li>
+                            <li>Mathew Hsu</li>
+                            <li>Shin Shii Ju</li>
+                            <li>William Chen</li>
+                            <li>Yu Hwi Chen</li>
+                            <li>Zei-Pao Huang</li>
+                            <li>Chinshu Liu</li>
+                            <li>Chun-Ju Lai</li>
+                            <li>PH Chen</li>
+                            <li>pullpull</li>
+                            <li>st688</li>
+                            <li>tl578</li>
+                            <li>Tracy Huang</li>
+                            <li>yaojen</li>
+                            <li>Yen-Chi Chen</li>
+                            <li>Yi Chung Yao</li>
+                            <li>Ying Jen Chen</li>
+                            <li>以及數位匿名捐款者</li>
+                        </ul>                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="wow shake" data-wow-delay="0.4s">
+                        <div class="round-btn">
+                            <a href="#top">
+                                <i class="fa fa-arrow-circle-up animated"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p>
+                        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+                            <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+                        </a><br />
+                        This work by
+                        <a xmlns:cc="http://creativecommons.org/ns#" href="https://g0v.us" property="cc:attributionName" rel="cc:attributionURL">
+                            https://g0v.us
+                        </a>
+                        is licensed under a
+                        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+                            Creative Commons Attribution 4.0 International License
+                        </a>
+                        .
+                        <br/>
+                        <a href="3rd-party-licenses.txt">Third-party license information</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/jquery-2.1.0.min.js"></script>
+    <script src="../js/jquery.easing.1.3.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+    <!-- wow animation -->
+    <script src="../js/wow.min.js"></script>
+    <!-- lightbox (photo viewer) -->
+    <!--<script src="lightbox/js/jquery-1.11.0.min.js"></script>-->
+    <script src="lightbox/js/lightbox.min.js"></script>
+    <!-- customization -->
+    <script>
+        $(document).ready(function() {
+            new WOW().init();
+
+            //// switch navbar class upon scrolling away from the top
+            //$(window).scroll(function() {
+            //    if ($(".navbar").offset().top > 50) {
+            //        $(".navbar").removeClass("navbar-at-top");
+            //    } else {
+            //        $(".navbar").addClass("navbar-at-top");
+            //    }
+            //});
+
+            // scrolling animation
+            function scrollAnimationFunc(event) {
+                event.preventDefault();
+                if(event.currentTarget.href.match(/#/)) {
+                    $(document.body).animate(
+                        {scrollTop: $($(this).attr("href")).offset().top},
+                        1500, "easeInOutQuint");
+                } else {
+                    location.href = event.currentTarget.href;
+                }
+            }
+            $(".navbar ul.nav li a").click(scrollAnimationFunc);
+            $(".round-btn > a").click(scrollAnimationFunc);
+        });
+    </script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,272 @@
+@import url('//fonts.googleapis.com/css?family=Inconsolata:700');
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Heiti TC", "Apple LiGothic Medium", "\5FAE\8EDF\6B63\9ED1\9AD4", sans-serif;
+    font-weight: 300;
+    color: black;
+    background-color: white;
+}
+
+.g0v {
+    font-family: Inconsolata, sans-serif;
+    font-size: 120%;
+    text-transform: uppercase;
+}
+
+/*==================================================*/
+/* navbar except when it is at the top of the page */
+/*==================================================*/
+
+.navbar {
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    background-color: #222;
+    margin: 0;
+
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.navbar .navbar-header a, /* brand name */
+.navbar ul.nav li a {
+    color: #ddd;
+}
+
+.navbar i {
+    color: #ddd;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+
+.navbar ul.nav li a:hover,
+.navbar ul.nav li a:focus,
+.navbar ul.nav li.active {
+    background-color: #555;
+}
+
+
+/*==================================================*/
+/* navbar scrolled to the top */
+/*==================================================*/
+
+.navbar-at-top {
+    background-color: rgba(0, 0, 0, 0);
+    margin: 20px;
+}
+
+.navbar-at-top ul.nav li a {
+    color: #222;
+    background-color: rgba(255, 255, 255, 0.4)
+}
+
+.navbar-at-top ul.nav li a:hover,
+.navbar-at-top ul.nav li a:focus,
+.navbar-at-top ul.nav li.active {
+    background-color: rgba(255, 255, 255, 0.5)
+}
+
+
+/*==================================================*/
+/* top page */
+/*==================================================*/
+
+#top {
+    width: 100%;
+    /*height: 300px;*/
+    position: relative;
+
+    /*background: url('../img/top.jpg') no-repeat center center / cover;*/
+    text-align: center;
+    padding: 80px 0 80px 0;
+}
+
+#top #title {
+    color: #222;
+    font-size: 40px;
+    font-weight: 900;
+    text-shadow: -1px 0 1px white, 0 0 15px white;
+}
+
+#top #subtitle {
+    color: #222;
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: -1px 0 1px white, 0 0 15px white;
+}
+
+/*==================================================*/
+/* the arrow buttons at page top and bottom */
+/*==================================================*/
+
+.round-btn {
+    margin: 30px 0;
+}
+
+.round-btn > a {
+    color: white;
+    font-size: 90px;
+    text-shadow: -1px 0 1px black, 0 0 15px black;
+}
+
+/*==================================================*/
+/* sections */
+/*==================================================*/
+
+#footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    color: white;
+}
+
+.section {
+    padding-top: 40px;
+    margin-bottom: 30px;
+    font-family: serif;
+    font-weight: 500;
+}
+
+.section.dark {
+    background-color: #DFE4F8;
+}
+
+.section h1 {
+    font-weight: 500;
+    font-size: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-weight: 700;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.section h3 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    margin-bottom: 20px;
+}
+
+.section h4 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+.section .box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 1px;
+}
+
+.section .box p {
+    font-size: 20px;
+    line-height: 32px;
+    text-align: justify;
+    text-indent: 2em;
+}
+.section .box li {
+    font-size: 20px;
+    line-height: 32px;
+    text-align: justify;
+}
+
+.tight {
+    padding: 2px !important;
+}
+
+/*.section ul {*/
+/*    font-size: 16px;*/
+/*    line-height: 28px;*/
+/*    [>text-align: left;<]*/
+/*}*/
+
+.box.program {
+    text-align: left;
+}
+
+.box.program .hanging-indent {
+    text-indent: -40px;
+    padding-left: 40px;
+}
+
+/*==================================================*/
+/* embeddings */
+/*==================================================*/
+
+.map {
+    height: 500px;
+}
+
+.video {
+    overflow: hidden;
+}
+
+/* to prevent map zooming on mouse scroll */
+.mapoverlay {
+    background: rgba(0, 0, 0, 0);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    margin-top: -500px;
+}
+
+.signup-form {
+    height: 2000px;
+
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+}
+
+
+/*==================================================*/
+/* Media queries */
+/*==================================================*/
+
+/*@media(min-width:992px) {*/
+/*    #top {*/
+/*        height: 100%;*/
+/*        padding: 0;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width:767px) {*/
+/*    .navbar-at-top ul.nav li a {*/
+/*        color: #222;*/
+/*        background-color: #ddd*/
+/*    }*/
+
+/*    .navbar-at-top ul.nav li a:hover,*/
+/*    .navbar-at-top ul.nav li a:focus,*/
+/*    .navbar-at-top ul.nav li.active {*/
+/*        background-color: #fff*/
+/*    }*/
+
+/*    #top #title {*/
+/*        font-size: 40px;*/
+/*    }*/
+
+/*    .section .box {*/
+/*        margin: 10px;*/
+/*    }*/
+
+/*    .fb-btn {*/
+/*        margin-bottom: 20px;*/
+/*    }*/
+/*}*/
+
