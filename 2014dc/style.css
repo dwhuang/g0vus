@@ -167,6 +167,11 @@ body {
     margin-bottom: 20px;
 }
 
+.section h5 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
 .section .box {
     background-color: #f0f0f0;
     padding: 20px;
@@ -187,6 +192,10 @@ body {
 
 .tight {
     padding: 2px !important;
+}
+
+div.staff {
+    color: #555555;
 }
 
 /*.section ul {*/
